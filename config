@@ -192,3 +192,14 @@ bindsym $mod+shift+x exec i3lock --c 333333
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
+# Open applications on certain workspaces
+assign [class="Gnome-terminal"] $ws1
+assign [class="Google-chrome"] $ws2
+assign [class="Code"] $ws3
+
+# Autostart
+exec google-chrome
+exec gnome-terminal
+exec redshift -c ~/.config/redshift.conf
+
+
